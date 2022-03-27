@@ -17,9 +17,24 @@ export default function App() {
     <div>
       <h1>Hello StackBlitz!</h1>
       <hr />
-      <Counter id={1} init={memoA.cont} increment={memoA.increment} />
-      <Counter id={2} init={memoB.cont} increment={memoB.increment} />
-      <Counter id={3} init={memoC.cont} increment={memoC.increment} />
+      <Counter
+        id={1}
+        init={memoA.cont}
+        increment={memoA.increment}
+        reset={memoA.reset}
+      />
+      <Counter
+        id={2}
+        init={memoB.cont}
+        increment={memoB.increment}
+        reset={memoB.reset}
+      />
+      <Counter
+        id={3}
+        init={memoC.cont}
+        increment={memoC.increment}
+        reset={memoC.reset}
+      />
     </div>
   );
 }
